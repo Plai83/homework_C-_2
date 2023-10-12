@@ -35,7 +35,15 @@ int getThreeNumber(int maxRankNumber, int number)
 
 
 int number = getNumber("Введите число => ");
-int maxRank = getMaxRankNumber(number);
-Console.WriteLine(maxRank);
-Console.WriteLine(getThreeNumber(maxRank, number));
+if (number < 100)
+{
+    Console.WriteLine("Третьей цифры нет");
+}
+else
+{
+    int maxRank = getMaxRankNumber(number);
+    Console.WriteLine(maxRank);
+    Console.WriteLine(getThreeNumber(maxRank, number));
+}
+
 
