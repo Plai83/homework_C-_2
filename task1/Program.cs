@@ -4,8 +4,6 @@
 // 782 -> 8
 // 918 -> 1
 
-using System.Globalization;
-using System.Xml.XPath;
 
 int getNumber(string msg)
 {
