@@ -42,7 +42,6 @@ if (number < 100)
 else
 {
     int maxRank = getMaxRankNumber(number);
-    Console.WriteLine(maxRank);
     Console.WriteLine(getThreeNumber(maxRank, number));
 }
 
