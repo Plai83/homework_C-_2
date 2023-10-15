@@ -17,17 +17,13 @@ while (true)
     int enterDigit = getDigit("Введите порядковый номер дня недели, цифра должна быть не от 1 до 7");
     if (0 <enterDigit & enterDigit < 8)
         {
-            string[] daysWeeks = {
-                "Понедельник",
-                "Вторник",
-                "Среда",
-                "Четверг",
-                "Пятница",
-                "Суббота",
-                "Воскресение"
-            };
-            Console.WriteLine($"Ваш день {daysWeeks[enterDigit - 1]}");
-            break;
+        if (enterDigit == 6 & enterDigit == 7)
+            {
+                Console.WriteLine("Да, сегодня выходной");
+            }
+        else{
+            Console.WriteLine("Нет, сегодня рабочий день");
+        }
         }
         else 
         {
